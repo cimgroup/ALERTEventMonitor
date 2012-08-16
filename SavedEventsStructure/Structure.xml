@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event name="ALERT.KESI.IssueNew">
+    <event name="ALERT.Metadata.IssueNew.Stored">
+        <event name="ALERT.KEUI.IssueNew.Annotated">
+            <event name="ALERT.Metadata.IssueNew.Updated"/>
+        </event>
+    </event>
+</event>
