@@ -728,7 +728,7 @@ public class EventMonitor extends javax.swing.JFrame {
             Global.oTreeNodes.get(i).tnNode.removeFromParent();
         }
         
-        if (tnRoot.getChildCount() >= 0) { 
+        if (tnRoot != null && tnRoot.getChildCount() >= 0) { 
         for (Enumeration e=tnRoot.children(); e.hasMoreElements(); ) { 
                 DefaultMutableTreeNode tnChildren = (DefaultMutableTreeNode)e.nextElement(); 
                 tnChildren.removeFromParent();

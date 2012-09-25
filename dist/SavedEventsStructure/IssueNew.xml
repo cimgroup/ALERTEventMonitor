@@ -3,8 +3,9 @@
     <event name="ALERT.Metadata.IssueNew.Stored">
         <event name="ALERT.KEUI.IssueNew.Annotated">
             <event name="ALERT.Metadata.IssueNew.Updated">
-                <event name="ALERT.KEUI.KEUIResponse"/>
-                <event name="ALERT.CEP"/>
+                <event name="ALERT.CEP.KEUIRequest">
+                    <event name="ALERT.KEUI.KEUIResponse"/>
+                </event>
                 <event name="ALERT.STARDOM.CompetencyUpdate">
                     <event name="ALERT.CEP.Recommender.VerifyIdentitiesRequest  ">
                         <event name="ALERT.Recommender.IdentityVerification">
