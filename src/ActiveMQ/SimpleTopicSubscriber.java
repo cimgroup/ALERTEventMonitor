@@ -9,6 +9,7 @@ import javax.jms.*;
 import javax.naming.*;
 import java.io.*;
 import java.util.Properties;
+import java.util.UUID;
 
 /**
  *
@@ -73,7 +74,7 @@ public class SimpleTopicSubscriber {
         
         try{
             topicConnection = topicConnectionFactory.createTopicConnection();
-            topicConnection.setClientID("ALERTEventMonitor");
+            topicConnection.setClientID("ALERTEventMonitor" + UUID.randomUUID().toString());
             topicSession = topicConnection.createTopicSession(false, Session.AUTO_ACKNOWLEDGE);
             topicListener = new TextListener();
             
