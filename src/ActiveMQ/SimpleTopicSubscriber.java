@@ -74,7 +74,7 @@ public class SimpleTopicSubscriber {
         
         try{
             topicConnection = topicConnectionFactory.createTopicConnection();
-            topicConnection.setClientID("ALERTEventMonitor" + UUID.randomUUID().toString());
+            topicConnection.setClientID("ALERTEventMonitor" + Constants.c_UniqueID);
             topicSession = topicConnection.createTopicSession(false, Session.AUTO_ACKNOWLEDGE);
             topicListener = new TextListener();
             

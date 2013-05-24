@@ -5,6 +5,7 @@
 package alerteventmonitor;
 
 import java.util.ArrayList;
+import java.util.UUID;
 
 /**
  *
@@ -27,5 +28,5 @@ public class Constants {
     public static String c_ET_ALERT_WikiSensor_ArticleAdded = "ALERT.WikiSensor.ArticleAdded";
     public static String c_ET_ALERT_WikiSensor_ArticleModified = "ALERT.WikiSensor.ArticleModified";
 
-    
+    public static String c_UniqueID = UUID.randomUUID().toString();
 }
