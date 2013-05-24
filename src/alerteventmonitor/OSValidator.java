@@ -4,8 +4,6 @@
  */
 package alerteventmonitor;
 
-import com.sun.servicetag.Installer;
-
 /**
  *
  * @author sasa.stojanovic
@@ -90,7 +88,7 @@ public class OSValidator {
                 sPath = System.getProperty("user.dir");
             }
             else if (OSValidator.isUnix()) {
-                sPath = Installer.class.getResource(Installer.class.getSimpleName() + ".class").toURI().toString();
+                sPath = EventMonitor.class.getResource(EventMonitor.class.getSimpleName() + ".class").toURI().toString();
                 if (sPath != null && !sPath.isEmpty()) {
                     String [] sTemp = sPath.replace("\\", "/").split("!");
                     if (sTemp.length > 0) sPath = sTemp[0];

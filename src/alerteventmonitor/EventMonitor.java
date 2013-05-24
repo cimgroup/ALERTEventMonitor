@@ -471,7 +471,7 @@ public class EventMonitor extends javax.swing.JFrame {
     {
         //Constants.sEventTypes.add(Constants.c_ET_ALERT_KESI_IssueNew);
 
-        txtActiveMQ.setText(Constants.sActiveMQAddress);
+        txtActiveMQ.setText(OSValidator.GetAppPath());
         txtActiveMQ.setEnabled(false);
         
         CustomTreeCellRenderer renderer = new CustomTreeCellRenderer();
