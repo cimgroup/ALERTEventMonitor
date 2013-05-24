@@ -25,10 +25,10 @@ public class CustomTreeCellRenderer extends DefaultTreeCellRenderer {
     
     public CustomTreeCellRenderer() {
         super();
-        iiGray = new ImageIcon("img/grayIcon.gif");
-        iiOk = new ImageIcon("img/okIcon.gif");
-        iiWaiting = new ImageIcon("img/waitingIcon.gif");
-        iiReceived = new ImageIcon("img/receivedIcon.gif");
+        iiGray = new ImageIcon(OSValidator.GetAppPath() + "/img/grayIcon.gif");
+        iiOk = new ImageIcon(OSValidator.GetAppPath() + "/img/okIcon.gif");
+        iiWaiting = new ImageIcon(OSValidator.GetAppPath() + "/img/waitingIcon.gif");
+        iiReceived = new ImageIcon(OSValidator.GetAppPath() + "/img/receivedIcon.gif");
     }
     
     @Override

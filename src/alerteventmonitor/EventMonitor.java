@@ -746,7 +746,7 @@ public class EventMonitor extends javax.swing.JFrame {
         {
             if (Global.oTreeNodes.size() > 0)
             {
-                JFileChooser fcSave = new JFileChooser(System.getProperty("user.dir") + "/SavedEventsStructure");
+                JFileChooser fcSave = new JFileChooser(OSValidator.GetAppPath() + "/SavedEventsStructure");
                 fcSave.setFileFilter(new xmlFileFilter());
                 int drResult = fcSave.showSaveDialog(jPanel1);
                 if (drResult == JFileChooser.APPROVE_OPTION)
@@ -816,7 +816,7 @@ public class EventMonitor extends javax.swing.JFrame {
     {
         try
         {
-            JFileChooser fcLoad = new JFileChooser(System.getProperty("user.dir") + "/SavedEventsStructure");
+            JFileChooser fcLoad = new JFileChooser(OSValidator.GetAppPath() + "/SavedEventsStructure");
             fcLoad.setFileFilter(new xmlFileFilter());
             int drResult = fcLoad.showOpenDialog(jPanel1);
             if (drResult == JFileChooser.APPROVE_OPTION)
@@ -943,7 +943,7 @@ public class EventMonitor extends javax.swing.JFrame {
     {
         try
         {
-            JFileChooser fcSave = new JFileChooser(System.getProperty("user.dir") + "/SavedLogs");
+            JFileChooser fcSave = new JFileChooser(OSValidator.GetAppPath() + "/SavedLogs");
             fcSave.setFileFilter(new txtFileFilter());
             int drResult = fcSave.showSaveDialog(jPanel1);
             if (drResult == JFileChooser.APPROVE_OPTION)
